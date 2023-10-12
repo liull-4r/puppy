@@ -1,0 +1,92 @@
+/*************************************          universal selector
+************************************************************************************************************************* */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+/* ************  all h2 parts   ****************************** */
+h2 {
+  font-size: 4vw;
+}
+/* **************** headear text parts************************ */
+.header-footer {
+  background-color: #085070;
+  text-align: center;
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 1.5%;
+}
+/* *********** all images  ********* */
+img {
+  width: 100%;
+  height: 100%;
+}
+/* ************* banner puppies  ************** */
+.banner-image {
+  margin-bottom: 5%;
+}
+/* ********* all puppies below banner********** */
+.puppies img {
+  padding: 0 10%;
+  margin-bottom: 5%;
+}
+.puppy-2 img {
+    margin-bottom: 0;
+  }
+/* ************ missing text to display none ****************** */
+.missing {
+  display: none;
+}
+/* ********** more puppies text **********888  */
+.more-text {
+  padding: 5% 0;
+  text-align: center;
+}
+/* ************* starting of media query  ********************* */
+@media (min-width: 768px) {
+  .puppies {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  /* ******************** all puppies image     ******************** */
+  .puppies img {
+    padding: 0;
+  }
+  /* ************* puppy 1 and puppy 2 images  ************* */
+  .puppy-1 img
+   {
+    margin-bottom: 0;
+  }
+  /* ******************  missing  parts to display block         ********************* */
+  .missing {
+    display: block;
+    background-color: #EE4D65;
+  }
+  /* ************* specifically missing paragraph **************** */
+  .missing p {
+    padding: 3vw 0 0 4vw;
+    font-size: 4vw;
+    font-weight: 500;
+  }
+  /* ************************ the first puppies section   **************************** */
+  .puppy-1,
+  .missing,
+  .puppy-2 {
+    width: 32%;
+  }
+   
+  /* *************** the second puppies section****************** */
+  .puppy-3,
+  .puppy-4 {
+    width: 48%;
+  }
+}
+/* ************* footer  parts************* */
+.footer {
+  padding: 5% 0;
+  margin-top: 5%;
+}

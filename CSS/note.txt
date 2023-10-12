@@ -1,0 +1,4 @@
+shrink grow basis
+calc clamp
+
+  gap: 2%;
