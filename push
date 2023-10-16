@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# script to push code to github
+
+if [ -z "$1" ]
+then
+        echo "\$ Usage: ./push  '<commit message>'"
+else
+        git add .
+        git commit -m "$1";
+        git push 
+fi
